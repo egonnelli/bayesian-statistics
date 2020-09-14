@@ -9,7 +9,7 @@ data{
 }
 
 parameters{
-	
+	real a[J] // year J intercept
 
 }
 
@@ -18,4 +18,7 @@ model{
 
 }
 
+generated quantities{
+	
 
+}
