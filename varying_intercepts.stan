@@ -7,3 +7,15 @@ data{
 	int<lower=0,upper=1> x_hisp[N]; // input data (hisp ethn)
 	int year[N]; // yer ID variable
 }
+
+parameters{
+	
+
+}
+
+model{
+	
+
+}
+
+
