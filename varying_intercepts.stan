@@ -19,7 +19,9 @@ parameters{
 }
 
 model{
-	
+	a ~ normal(mu_a, sigma_a);
+	for (n in 1:N)
+		y[n] ~ normal(a[year[n]])
 
 }
 
