@@ -10,6 +10,12 @@ data{
 
 parameters{
 	real a[J] // year J intercept
+	real b_union_yes; // beta slope for union data
+	real b_hips;
+	real b_black;
+	real mu_a;
+	real<lower=0> sigma_y;
+	real<lower=0> sigma_a;
 
 }
 
