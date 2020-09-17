@@ -11,12 +11,11 @@ data{
 parameters{
 	real a[J] // year J intercept
 	real b_union_yes; // beta slope for union data
-	real b_hips;
-	real b_black;
-	real mu_a;
-	real<lower=0> sigma_y;
-	real<lower=0> sigma_a;
-
+	real b_hips; // beta slope for hisp data
+	real b_black; // beta slope for black data
+	real mu_a; // pior on alpha
+	real<lower=0> sigma_y; // pior sigma of y in year j
+	real<lower=0> sigma_a; // hyperparameter sigma of alpha
 }
 
 model{
