@@ -30,7 +30,8 @@ generated quantities{
 	vector[N] y_hat;
 
 	for (i in 1:N){
-		
+		y_hat[i] = normal_rng();
+		log_lik[i] = normal_lpdf( | ); 
 
 	}
 }
