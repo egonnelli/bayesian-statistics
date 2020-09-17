@@ -20,11 +20,17 @@ parameters{
 
 model{
 	a ~ normal(mu_a, sigma_a);
-	for (n in 1:N)
+	for (n in 1:N){
 		y[n] ~ normal(a[year[n]] + b_union_yes * x_union[n] + b_black * x_black[n] + b_hips * x_hisp[n], sigma_y );
+	}
 }
 
 generated quantities{
-	
+	vector[N] log_lik; 
+	vector[N] y_hat;
 
+	for (i in 1:N){
+		
+
+	}
 }
