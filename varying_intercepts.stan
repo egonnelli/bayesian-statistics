@@ -31,7 +31,6 @@ generated quantities{
 
 	for (i in 1:N){
 		y_hat[i] = normal_rng(a[year[i]] + b_union_yes * x_unon[i] + b_black * x_black[i] + b_hisp * x_hisp[i], sigma_y);
-		log_lik[i] = normal_lpdf( y[i] |  ); 
-
+		log_lik[i] = normal_lpdf( y[i] | a[year[i]] + b_union_yes * x_unon[i] + b_black * x_black[i] + b_hisp * x_hisp[i], sigma_y); 
 	}
 }
