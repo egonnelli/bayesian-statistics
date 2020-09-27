@@ -9,7 +9,13 @@ data{
 }
 
 parameters{
-
+	real a;
+	real b_union[J];
+	real b_hisp;
+	real b_black;
+	real mu_b;
+	real<lower=0> sigma_y;
+	real<lower=0> sigma_b;
 }
 
 model{
