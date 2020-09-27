@@ -13,9 +13,9 @@ parameters{
 	real b_union[J]; // year j slopes
 	real b_hisp; //
 	real b_black; //
-	real mu_b; //
-	real<lower=0> sigma_y; //
-	real<lower=0> sigma_b; //
+	real mu_b; // prior on beta
+	real<lower=0> sigma_y; // prior sigma of y in year j
+	real<lower=0> sigma_b; // hyperparameter sigma of beta
 }
 
 model{
